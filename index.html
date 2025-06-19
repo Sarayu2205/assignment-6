@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Instagram</h1>
+      <ul>
+        <li class="active"><i class="fas fa-home"></i> Home</li>
+        <li onclick="toggleSearch()"><i class="fas fa-search"></i> Search</li>
+        <li><i class="fas fa-compass"></i> Explore</li>
+        <li><i class="fas fa-message"></i> Messages</li>
+        <li><i class="fas fa-heart"></i> Notifications</li>
+        <li><i class="fas fa-plus-square"></i> Create</li>
+        <li><i class="fas fa-user"></i> Profile</li>
+        <li><i class="fas fa-bars"></i> More</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="search-bar" id="searchBar">
+      <input type="text" placeholder="Search here..." />
+    </div>
+    
+
+
+      <div class="stories">
+  <div class="story">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-B0PR4T3vCDIzyyMwtgwtGdRixwHnscWSrA&s" alt="Taylor Swift">
+  </div>
+  <div class="story">
+    <img src="https://images.news18.com/ibnlive/uploads/2025/05/Shah-Rukh-Khan-On-Met-Gala-2025-Debut_-%E2%80%98Important-To-Represent-My-Countrymen%E2%80%A61-2025-05-b803cd0e7e3fcb111a147e352ebe45ba-16x9.jpg?impolicy=website&width=640&height=360" alt="Shah Rukh Khan">
+  </div>
+  <div class="story">
+    <img src="https://cdn.britannica.com/29/215029-050-84AA8F39/British-actress-Emma-Watson-2017.jpg" alt="Emma Watson">
+  </div>
+  <div class="story">
+    <img src="https://variety.com/wp-content/uploads/2024/05/GettyImages-2151775094.jpg?w=681&h=454&crop=1" alt="Chris Hemsworth">
+  </div>
+  <div class="story">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Priyanka-snapped-at-Olive-2.jpg" alt="Priyanka Chopra">
+  </div>
+   <div class="story">
+  <img src="https://m.media-amazon.com/images/M/MV5BODE1ODE5MzY5M15BMl5BanBnXkFtZTgwNDg1NDA4NTM@._V1_FMjpg_UX1000_.jpg" alt="Dakota Johnson">
+</div>
+   <div class="story">
+  <img src="https://www.wwe.com/f/styles/talent_champion_lg/public/all/2024/03/The_Rock_PROFILE--927b15797eefad54a3bca4d2a15e4921.png" alt="Dwayne Johnson">
+</div>
+<div class="story">
+  <img src="https://m.media-amazon.com/images/M/MV5BYmNlZTQzMjQtODEwZi00MjljLTgzNDktY2Q1MmY0N2Q4ZTQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Deepika Padukone">
+</div>
+</div>
+
+
+
+      <div class="posts">
+        <!-- Post 1 -->
+        <div class="post">
+          <div class="post-header">
+            <span>👩 user_01</span>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="post-image">
+            <img src="https://1.bp.blogspot.com/-0k-he9cYBTc/T7UAgbkZc8I/AAAAAAAAIgE/wyGH7z_2GF0/s640/IMG_0313." alt="Paris image" />
+          </div>
+          <div class="post-actions">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="post-caption">
+            <b>user_01</b> ❤️  
+
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="post">
+          <div class="post-header">
+            <span>🧑 user_02</span>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="post-image">
+            <img src="https://images.summitmedia-digital.com/spotph/images/2020/11/06/random-yrisgenelopez-1604668096.jpg" alt="Sunset image" />
+          </div>
+          <div class="post-actions">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="post-caption">
+            <b>user_02</b> ❤️  
+
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="post">
+          <div class="post-header">
+            <span>👦 user_03</span>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="post-image">
+            <img src="https://thumbs.dreamstime.com/b/fall-colors-road-michigan-beautiful-random-upper-peninsula-95173443.jpg" alt="Random road" />
+          </div>
+          <div class="post-actions">
+            <i class="far fa-heart"></i>
+            <i class="far fa-comment"></i>
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="post-caption">
+            <b>user_03</b> ❤️  
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rightbar -->
+    <div class="rightbar">
+  <div class="profile-suggest">
+    <div class="profile">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Your Profile" />
+      </div>
+      <div class="details">
+        <p><b>your_name</b></p>
+        <p class="gray">Your Name</p>
+      </div>
+      <button>Switch</button>
+    </div>
+
+    <p class="suggest-text">Suggestions for you</p>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="friend_01" />
+      </div>
+      <div class="details">
+        <p><b>friend_01</b></p>
+        <p class="gray">Follows you</p>
+      </div>
+      <button>Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="friend_02" />
+      </div>
+      <div class="details">
+        <p><b>friend_02</b></p>
+        <p class="gray">New to Instagram</p>
+      </div>
+      <button>Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="friend_03" />
+      </div>
+      <div class="details">
+        <p><b>friend_03</b></p>
+        <p class="gray">Suggested for you</p>
+      </div>
+      <button>Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="friend_04" />
+      </div>
+      <div class="details">
+        <p><b>friend_04</b></p>
+        <p class="gray">Followed by user_01</p>
+      </div>
+      <button>Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="friend_05" />
+      </div>
+      <div class="details">
+        <p><b>friend_05</b></p>
+        <p class="gray">Creative content</p>
+      </div>
+      <button>Follow</button>
+    </div>
+
+    <div class="suggestion">
+      <div class="pic">
+        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="friend_06" />
+      </div>
+      <div class="details">
+        <p><b>friend_06</b></p>
+        <p class="gray">Adventurer</p>
+      </div>
+      <button>Follow</button>
+    </div>
+  </div>
+</div>
+
+   <script>
+    function toggleSearch() {
+      const search = document.getElementById("searchBar");
+      search.classList.toggle("show");
+    }
+
+    // Highlight active menu item
+    document.querySelectorAll('.sidebar li').forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelectorAll('.sidebar li').forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
